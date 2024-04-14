@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oceanofanythingofficial.github.io/BMI-Calculator/">
+    <meta property="og:title" content="BMI Calculator">
+    <meta property="og:description" content="Quickly calculate your Body Mass Index (BMI) with our easy-to-use online BMI Calculator. Get instant, accurate results to help you understand your health better. Start tracking your fitness journey today!">
+    <meta property="og:image" content="https://oceanofanythingofficial.github.io/BMI-Calculator/preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://oceanofanythingofficial.github.io/BMI-Calculator/">
+    <meta property="twitter:title" content="BMI Calculator">
+    <meta property="twitter:description" content="Quickly calculate your Body Mass Index (BMI) with our easy-to-use online BMI Calculator. Get instant, accurate results to help you understand your health better. Start tracking your fitness journey today!">
+    <meta property="twitter:image" content="https://oceanofanythingofficial.github.io/BMI-Calculator/preview.png">
+
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex Calculator</h3>
+    <form class="form" id="form" onsubmit="return validateForm()">
+        <div class="row-one">
+            <input type="text" class="text-input" id="age" autocomplete="off" required />
+            <p class="text">Age</p>
+            <label class="container">
+                <input type="radio" name="radio" id="f">
+                <p class="text">Female</p>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio" id="m">
+                <p class="text">Male</p>
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <div class="row-two">
+            <input type="text" class="text-input" id="height" autocomplete="off" required>
+            <p class="text">Height (cm)</p>
+            <input type="text" class="text-input" id="weight" autocomplete="off" required>
+            <p class="text">Weight (kg)</p>
+        </div>
+        <button type="button" id="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
